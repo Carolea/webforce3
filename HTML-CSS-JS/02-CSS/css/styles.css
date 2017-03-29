@@ -1,0 +1,253 @@
+/*----------------------------
+Dans cette feuille de style CSS, je vais pouvoir définir l'apparence que je veux donner aux différents éléments qui composent ma page!
+
+### La Syntaxe ###
+
+element{
+    propriete:valeur;
+}
+
+### Cibler via la classe de l'élément ###
+.LaClasse{
+    propriete:valeur;
+}
+
+### Cibler via son ID un élément ###
+
+#MonID{
+    propriete:valeur;
+}
+
+CONSIGNE:
+1 - Tous les liens de mon <header> sont en noir
+2 - Non souligné
+3 - Affiché en ligne grâce à la propriété "display"
+
+-----------------------------*/
+
+a, h1, h3{
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+
+header a{
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/*Ici je cible toutes les listes présentent dans mon <header>*/
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header ul li{
+    display: inline-block;
+    /*WIDTH : me permet de définir la largeur de mon élément*/
+    width: 317px;
+    /*Aligner le texte dans son élément*/
+    text-align: center;
+}
+
+ /*Je souhaite que mes liens soient rouge au passage de la souris
+    a:{
+        color: #dd0613;
+    }*/
+
+/*Je change la couleur de mon lien à l'intérieur de la classe current.*/
+header ul li.current a{
+    color: #dd0613;
+}
+
+/*HEADER*/
+
+header section {
+    width: 100%;
+    height: 200px;
+    background: url(../img/bandeau.jpg) no-repeat;    
+}
+
+/*MAIN*/
+main {
+    /*Je veux définir la largeur de ma page*/
+    width: 100%;
+    /*Mais, je ne vais pas au-delà de 960px*/
+    max-width: 960px;
+    /*margin : <top/bottom> <left/right>*/
+    margin: 0 auto;
+    /*Je rajoute un fond blanc à ma page*/
+    background: #EEE;
+    
+    /*margin: <top> <right> <bottom> <left>*/
+    margin: 80px auto 80px auto;
+    
+    /*border-radius me permet de rajouter un arrondi à mon élément*/
+    border-radius: 5px;
+    
+    /*box-shadow applique une ombre autour de ma page (<main>)*/
+    /*box-shadow: offset-x |offset-y | blur-radius | color*/
+    box-shadow: 5px 5px 15px #CCC;
+    
+    /*J'applique une marge interne de 5px autour de mon <main>*/
+    padding: 5px;
+    
+    /*Overflow avec la valeur hidden, va supprimer l'affichage de tous les éléments qui dépassent du <main>*/
+    overflow: hidden; 
+}
+
+/*Je souhaite changer la couleur du fond de ma page*/
+body{
+    /*background-color: #FBE9E7;*/
+    background: url(../img/background2.jpg);
+    background-size: cover;
+}
+
+/*CONSIGNE:
+    1. A mon <main> je souhaite ajouter une marge top/bottom de 60px;
+    2. Ajouter avec la propriété "border-radius" un arrondi de 5px à <main>.
+    3. Puis, grâce à "box-shadow", ajouter une ombre LEGERE autour de <main>
+*/
+
+
+section h1{
+    /*aligner mon titre au milieu*/
+    text-align: center;
+    
+    /*Je ne souhaite pas que mon titre soit en gras*/
+    font-weight: normal;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 30px;
+    
+    /*Je souhaite une bordure en bas de mon titre, solid: ligne par défaut, dotted: ptt pt, dashed: -- */
+    
+    border-bottom: 1px dashed #000;
+    
+}
+
+
+/*ILLUSTRATION ET ARTICLE*/
+
+section aside{
+    width: 40%;
+    height: auto;
+    float: left;
+    margin-bottom: 10px;
+}
+
+section aside img{
+    max-width: 100%;
+}
+
+section article{
+    width: 57%;
+    height: auto;
+    float: left;
+    /*1ère possibilité : padding
+    padding: 0 10px 0 10px;
+    box-sizing: border-box;*/
+    
+    /*2ème possibilité : margin*/
+    margin: 0 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+}
+
+
+/*PIED DE PAGE*/
+
+footer{
+    /*Dimension & Positionnement*/
+    width: 100%;
+    height: 210px; /*ou auto*/
+    float: left;
+    
+    /*Décoration*/
+    background-color: #FF9E80;
+    padding-top: 10px;
+}
+
+.gmap {
+    width: calc( (100% / 3) - 10px);
+    float: left;
+    margin-left: 10px
+}
+
+.newsletter{
+    width: calc( (100% / 3) - 10px);
+    float: left;
+    margin-left: 10px;
+}
+
+.contact{
+    width: calc(100% / 3);
+    float: left;
+}
+
+/*NEWSLETTER*/
+
+.newsletter form fieldset{
+    border: 2px solid #FFF;
+    border-radius: 8px;
+    color: #FFF;
+    height: 180px;
+    font-family: 'Roboto Condensed'; sans-serif;
+}
+
+.newsletter input[type=text],
+.newsletter input[type=email]{
+    width: 91%;
+    height: 25px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+.newsletter input[type=submit] {
+    width: 100%;
+    height: 35px;
+    margin-top: 0px;
+    border: 1;
+    background-color: #FF9E80;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #FFF;
+}
+
+/*CONTACT*/
+
+.contact h3{
+    color: #FFF;
+    text-align: center;
+    font-weight: normal;
+}
+
+.contact address{
+    color: #FFF;
+    padding-left: 20px;
+}
+
+.contact address strong {
+    font-size: 20px;   
+}
+
+.contact address a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.contact address a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
