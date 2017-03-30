@@ -1,3 +1,125 @@
-body{
-    background-color: red;
+/*Div .page/ englobant la page*/
+.page{
+    width: 100%;
+    max-width: 1000px;
+    background-color: floralwhite;
+    box-shadow: 5px 5px 15px #DDD ;
+    margin-left: 100px   
 }
+
+/*TOPHEADER*/
+.topheader{
+    width: 100%
+}
+.topheader p{
+    font-family: 'Crimson Text', serif;
+    font-weight: bold    
+}
+
+.topheader section p{
+    font-weight: lighter;
+    float: right;
+}
+
+.topheader section p a{
+    text-decoration: none;
+    color: black;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 180px;
+}
+
+header img{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+header nav{
+    width: 80%;
+    height: auto;
+    margin-top: 50px;
+    float: right
+/*    décaler sur la droite*/
+}
+
+header nav ul li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+}
+
+/*PROJECTEUR*/
+#Projecteur{
+    max-width: none;
+    overflow: visible;
+}
+/*Faire dépasser la photo*/
+
+
+/*IMG/ARTICLE/PARTENAIRES*/
+.main{
+    width: 100%;
+    height: auto;
+    display: inline-block
+}
+
+.main h1{
+    text-align: center;
+    font-family: 'Crimson Text',serif;
+}
+
+aside{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+article{
+    width: 50%;
+    height: auto;
+    font-family: 'Crimson Text',serif;
+    font-size: 18.5px;
+    float: right; 
+}
+
+.partenaires{
+    width: 100%;
+    height: auto;
+    
+}
+
+.partenaires h3{
+    text-align: center;
+}
+
+.partenaires img {
+    width: calc(100% / 4);
+    height: auto;
+    display: inline-block;
+}
+
+/*Resize*/
+
+
+
+
+
+
+
+
+
+
+
+
+
