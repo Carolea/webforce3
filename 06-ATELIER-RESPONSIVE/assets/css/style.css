@@ -1,0 +1,125 @@
+/*Pour les écrans larges*/
+/*Déclaration de styles pratique*/
+
+.rm{
+    margin: 0 !important;
+}
+
+.rp{
+    padding: 0 !important;
+}
+.mt-40{
+    margin-top: 40px;
+}
+
+.relative{
+    position: relative;
+}
+
+.clear{
+    clear: both;
+}
+
+
+
+body{
+    background-color: #929800;
+}
+
+/* ---------- MAIN ---------- */
+.container-full{
+    width: 100%;
+    height: auto;
+    margin: 0 auto; 
+}
+
+
+/* ---------- HEADER ---------- */
+
+/* ---------- PROJECTEUR ---------- */
+
+.projecteur{
+    width: 100%;
+    height: 100vh;
+/*    position: relative;*/
+    object-fit: cover;
+}
+
+.projecteur nav{
+    position: absolute;
+}
+
+.projecteur nav ul{
+    text-align: center;
+}
+
+.projecteur nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.projecteur nav ul li a{
+    text-decoration: none;
+    color: #92B200;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.projecteur nav ul li a:hover{
+    text-decoration: none;
+    color:darkred;
+}
+/* ---------- Fin du PROJECTEUR ---------- */
+/* ---------- Fin du HEADER ---------- */
+
+
+/* ---------- Vidéos 1 ---------- */
+    
+/*Positionnement géré par boostrap*/
+/*Décoration*/
+    background: url(../);
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+iframe{
+    margin: 0 auto;
+    display: block;
+    /* centre les vidéos */
+}
+#nosvideos h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* ---------- Fin de Vidéos 1 ---------- */
+
+/* ---------- PHOTO ---------- */
+
+#nosphotos{
+    display: inline-block
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

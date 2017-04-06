@@ -1,0 +1,271 @@
+body{
+    background-color: darkred;
+}
+
+/*attribution d'une police
+h1 h2 h3{font-family: }*/
+
+/*Div .page/ englobant la page*/
+.page{
+/*Dimension et positionnement*/
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    
+/*Decoration*/
+    background-color: floralwhite;
+    box-shadow: 5px 5px 15px #FFF ;
+    margin: 40px  auto;   
+}
+.page > p{
+    font-family: 'Crimson Text', serif;
+    font-weight: bold;  
+    font-size: 21px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+}
+
+/*TOPHEADER*/
+.topheader{
+    width: 100%;
+    height: 40px;
+    float: left;
+    
+/* Décoration */
+    background-image: linear-gradient(180deg, #FFF,#EEE);
+    border-top-left-radius: 5px;
+}
+
+.topheader p{
+    font-weight: lighter;
+    text-align: right;
+    margin: 0 10px 0 0;
+    line-height: 30px;
+}
+
+.topheader p a{
+    text-decoration: none;
+    color: black;
+}
+
+.topheader p a:hover{
+    text-decoration: underline;
+}
+
+/*HEADER*/
+header{
+    width: 100%;
+    height: 190px;
+    float: left;
+/*    background-color: */
+}
+
+.logo{
+    width: 20%;
+    height: auto;
+    float: left;
+}
+
+/*MENU DU HEADER*/
+nav{
+    width: 80%;
+    height: 100px;
+    float: left;
+}
+
+nav ul{
+    margin-left: 212px;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-family: 'Crimson Text', serif;
+    font-size: 23px;
+    line-height: 300px;
+}
+
+nav ul li a:hover,
+nav ui li.current a{
+    color: #dd0613;
+}
+
+/*PROJECTEUR*/
+
+#Projecteur{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+#Projecteur img{
+    width: 100%;
+}
+
+/*IMG/ARTICLE/PARTENAIRES*/
+/*ZONE DE CONTENU*/
+.main{
+    width: 100%;
+    height: auto;
+    display: inline-block
+}
+
+.main h1{
+    text-align: center;
+    font-family: 'Crimson Text',serif;
+}
+
+aside{
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+article{
+    width: 50%;
+    height: auto;
+    font-family: 'Crimson Text',serif;
+    font-size: 18.5px;
+    float: right; 
+}
+
+/*ZONE PARTENAIRES*/
+.partenaires{
+    width: 100%;
+    height: auto;
+    float: left;
+    background-image: linear-gradient(180deg, #EEE 0%, #FFF 30%);
+}
+
+.partenaires h3{
+    text-align: center;
+    font-weight: normal;
+}
+
+.partenaires img {
+    width: calc((100% / 4) - 10px);
+    height: auto;
+    display: inline-block;
+    object-fit: cover;
+}
+
+
+/*PIED DE PAGE*/
+
+footer{
+    width:auto;
+    height: 270px;
+    /*Décoration*/
+    background-image: url("img/bandeau2.png");
+    
+}
+
+footer section{
+    /*Dimension & Positionnement*/
+    width: 100%;
+    height: auto;
+    max-width: 1000px;
+    margin: 40px auto;
+    float: left;   
+    
+    
+}
+
+.gmap {
+    width: calc( (100% / 3) - 10px);
+    float: left;
+    margin-left: 10px
+}
+
+.newsletter{
+    width: calc( (100% / 3) - 10px);
+    float: left;
+    margin-left: 10px;
+}
+
+.contact{
+    width: calc(100% / 3);
+    float: left;
+}
+
+/*NEWSLETTER*/
+
+.newsletter form fieldset{
+    border: 3px solid #DDD;
+    border-radius: 8px;
+    color: #DDD;
+    height: 180px;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+}
+
+.newsletter input[type=text],
+.newsletter input[type=email]{
+    width: 91%;
+    height: 25px;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.newsletter input[type=submit] {
+    width: 98%;
+    height: 35px;
+    margin-top: 0px;
+    border: 1;
+    background-color: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    color: gray;
+}
+
+/*CONTACT*/
+
+.contact fieldset{
+    border: 3px solid #FFF;
+    border-radius: 8px;
+    color: #FFF;
+    height: 180px;
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Crimson Text', serif;
+}
+
+.contact address{
+    color: #FFF;
+    padding-left: 20px;
+}
+
+.contact address strong {
+    font-size: 20px;   
+}
+
+.contact address a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.contact address a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+
+
+<html>
+    <head>
+        <meta charset="utf8">
+        <title>Aujourd'hui, CSS en FooOlie !</title>
+        <!--Ajouter un Fichier Css à ma page-->
+        <link rel="stylesheet" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+        <meta name="..." content="...">
+    </head>
+    
+    <body>
+        <main>
+            <header>
+                
+                <section>
+                    
+                </section>
+                
+                <ul>
+                    <li class="current"><a href="index.html">Accueil</a></li>
+                    <li><a href="#Presentation">Présentation</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+                
+            </header>
+                
+            
+            <section>
+               <h1>Exposition Cy Twombly au Centre Pompidou</h1>
+                <aside>
+                    <!--1.Mettre en place une image d'illustration-->
+                    <img src="img/cy-twombly-rose.jpg" alt="Cy Twombly">
+                    
+                </aside>
+                
+                
+                <article>
+                    <!--2.Texte d'introduction-->
+                    <div id="Presentation">
+                        <p>D’une ampleur inédite, cette première rétrospective complète de l’œuvre de l’artiste américain Cy Twombly est construite autour de trois grands cycles : Nine Discourses on Commodus (1963), Fifty Days at Iliam (1978) et Coronation of Sesostris (2000).</p>
+                        <em>L’exposition retrace l’ensemble de la carrière de l’artiste à travers un parcours de cent quarante peintures, sculptures, dessins et photographies.</em>
+                        <br>
+                        <p>De ses premiers travaux du début des années 1950, marqués notamment par le graffiti et l’écriture, à ses compositions des années 1960, de sa réponse à l’art minimal et conceptuel des années 1970 à ses dernières peintures, cette rétrospective souligne l’importance des cycles et des séries dans lesquels Cy Twombly réinvente la peinture d’Histoire. Salué comme l’un des plus importants peintres de la seconde moitié du 20e siècle, Twombly « syncrétise » l’héritage de l’expressionisme abstrait américain et les origines de la culture méditerranéenne.</p>
+                    </div>
+                </article>
+                
+            </section>
+            
+            <footer>
+                <section class="gmap">
+                    <!--3.Mettre en place une carte google map-->
+                    <div class="google-maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.2199849088435!2d2.351753796910167!3d48.86049977278909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7ac6c7e59dc3345!2sLe+Centre+Pompidou!5e0!3m2!1sfr!2sfr!4v1490690265084" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </section>
+                
+                <section class="newsletter">
+                   
+                    <!--4.Formulaire de newsletter | Nom, Prénom et Email-->
+                    <form name="FormulaireInscriptionNewsletter" action="newsletter.php" method="post">
+                        <fieldset>
+                            <legend>Newsletter</legend>
+                        <label for="Nom"></label>
+                        <input type="text" name="Nom" id="Nom" placeholder="Votre nom...">
+                        
+                        <label for="Prénom"></label>
+                        <input type="text" name="Prénom" id="Prénom" placeholder="Votre prénom...">
+                        
+                        <label for="Email"></label>
+                        <input type="email" name="Email" id="Email" placeholder="Votre Email..." required>
+                        
+                        <input type="submit" value="Valider">
+                        </fieldset>
+                    </form>
+                </section>
+                
+                <section class="contact">
+                  <div id=Contact></div>
+                   <h3>Contact</h3>
+                    <!--5.Coordonnées de contact-->
+                       <address>
+                            <i class="fa fa-clock-o" aria-hidden="true"></i> Tous les jours de 11h à 21h <br>
+                            <i class="fa fa-home" aria-hidden="true"></i> Place Georges Pompidou, <br>
+                            75004 Paris <br>
+                            <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+33 (0)1 44 78 12 33">+33 (0)1 44 78 12 33</a> <br>
+                            <i class="fa fa-at" aria-hidden="true"></i> <a href="mailto:contact@centrepompidou.fr">contact@centrepompidou.fr</a>
+                        </address>
+                </section>  
+            </footer>   
+        </main>
+    </body>  
+</html>

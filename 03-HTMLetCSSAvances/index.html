@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Entête de la page -->
+    <head>
+<!--   Encodage de la page    -->
+        <meta charset="UTF-8">
+        
+<!--    Titre de la page -->
+        <title>Coca-Cola</title>
+        
+<!--    Déclaration des feuilles de styles    -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/styles.css">
+        
+<!--    Google Font    -->
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,700" rel="stylesheet">
+        
+<!--    Font Awesome    -->
+        <link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+        <meta name="..." content="...">  
+    </head>
+    <body>
+<!--   Le contenu de ma page    -->
+        <div class="page">
+               
+                <p>Savoure l'instant !</p>
+<!--  TOPHEADER          -->
+            <div class="topheader">
+                <p>Espace Clients : <a href="connexion.html">Connexion</a> | <a href="inscription.html">Inscription</a></p>
+               
+            </div>
+<!--  HEADER          -->
+        <header>
+            <div class="logo">
+            <a href="index.html"><img src="img/logo.png" alt="Logo Coca-Cola"></a>
+            </div>
+<!--    nav>ul>li*3>a[h ref=#]        -->
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Accueil</a></li>
+                    <li><a href="#">Présentation</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        </div>
+        
+<!--   PROJECTEUR     -->
+           <div id="Projecteur">
+               <img src="img/projecteur.jpg" alt="Bandeau">
+           </div>
+           
+        <div class="page">  
+        <section class="main">
+           <h1>Coca-Cola les origines</h1>
+           
+<!--    ILLUSTRATION       -->
+            <aside>
+               <img src="img/coke.png" alt="Bouteille de Coca">  
+            </aside>
+            
+<!--    ARTICLE        -->
+            <article>
+                <p><strong>HISTOIRE</strong><br>Un après-midi, alors qu’il remue un liquide parfumé de couleur caramel, John Stith Pemberton, pharmacien d’Atlanta, obtient un breuvage qu’il s’empresse d’apporter, à quelques pas de là, à la pharmacie Jacob’s. La mixture y est alors diluée avec de l’eau gazeuse, puis proposée aux clients pour qu’ils la goûtent.<br><br>À l’unanimité, ces derniers lui trouvent quelque chose de nouveau. La pharmacie Jacob’s met aussitôt en vente la boisson au prix de 5 cents le verre. Il s’en écoule neuf par jour pendant la première année. L’aventure Coca-Cola commence !</p>   
+            </article>
+            
+<!--    ZONE PARTENAIRES        -->
+            <div class="partenaires">
+               <h3>Nos Partenaires</h3>
+                <a href="http://www.coca-cola-france.fr/stories/coca-cola-france-et-la-croix-rouge-francaise"><img src="img/croixrouge.png" alt="Logo Croix-rouge"></a>
+                <a href="http://www.coca-cola-france.fr/stories/Programme-5by20-Coca-Cola-contribue-a-l-autonomisation-de-millions-de-femmes-entrepreneurs-dans-le-monde"><img src="img/5by20.png" alt="Logo 5BY20"></a>
+                <a href="http://www.coca-cola-france.fr/stories/comment-coca-cola-gere-sa-consommation-d-eau-au-niveau-mondial"><img src="img/eau.png" alt="Lac"></a>
+                <a href="http://www.coca-cola-france.fr/stories/Juliette-Raymond-tout-schuss-avec-le-programme-Sponsorise-me-Coca-Cola"><img src="img/sponsoriseme.png" alt="Logo sponsoriseme"></a>
+            </div>
+            
+        </section>
+        </div>      
+<!--    FIN DE LA ZONE PARTENAIRE        -->
+        
+<!--    PIED DE PAGE   -->
+        <footer>
+           <div class="page">
+               
+            <section class="gmap">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14435.25254297027!2d2.261706522257982!3d48.82788100645229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e67a9a8e1b4b83%3A0x1ca4ae9bb0bc19d3!2sCoca+Cola+Entreprise!5e0!3m2!1sfr!2sfr!4v1490833187022" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </section>
+            
+            <section class="newsletter">
+               <form name="FormulaireInscriptionNewsletter" action="newsletter.php" method="post">
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <label for="Nom"></label>
+                        <input type="text" name="Nom" id="Nom" placeholder="Votre nom...">
+                        
+                        <label for="Prénom"></label>
+                        <input type="text" name="Prénom" id="Prénom" placeholder="Votre prénom...">
+                        
+                        <label for="Email"></label>
+                        <input type="email" name="Email" id="Email" placeholder="Votre Email..." required>
+                        
+                        <input type="submit" value="Valider">
+                    </fieldset>
+                </form>  
+            </section>
+            
+            <section class="contact">
+               <fieldset>
+                   <legend>Contact</legend>
+<!--                   <address>-->
+                        <i class="fa fa-pencil" aria-hidden="true"></i> Coca-Cola France<br>
+                        Service Consommateurs<br>
+                        9 chemin de Bretagne<br>
+                        CS 80050<br>
+                        92784 Issy les Moulineaux Cedex 9<br>
+                       <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+33 (0)1 58 00 26 00">+33 (0)1 58 00 26 00</a><br>
+                        <i class="fa fa-keyboard-o" aria-hidden="true"></i> <a href="mailto:contact@cocacola.fr">contact@cocacola.fr</a> 
+               </fieldset>
+            </section>
+           </div>
+        </footer>
+    </body>
+    
+</html>
