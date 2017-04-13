@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+   
+<!--encodage de la page   -->
+    <meta charset="UTF-8">
+    
+    
+<!--titre de la page   -->
+    <title>Exposition Cy Twombly au Centre Pompidou</title>
+    
+<!--pour internet explorer:
+    s'assurer qu'il utilise la dernière version du moteur de rendu 
+    https://www.alsacreations.com/astuce/lire/1437-comment-interdire-le-mode-de-compatibilite-sur-ie.html   -->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    
+<!--affichage du site sans zoom, initialisé à 100%    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<!--Bootstrap CSS    -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!--   Styles CSS   -->
+   <link rel="stylesheet" href="assets/css/style.css">
+   
+<!--     HTML5 Shiv -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>  
+  
+<!-- Google Fonts   -->
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
+
+<!--Fontawesome-->
+<link rel="stylesheet" href="https://opensource.keycdn.com/fontawesome/4.7.0/font-awesome.min.css" integrity="sha384-dNpIIXE8U05kAbPhy3G1cz+yZmTzA6CY8Vg/u2L9xRnHjJiAK76m2BIEaSEV+/aU" crossorigin="anonymous">
+  
+</head>
+<body>
+    
+<!--    Contenu html  -->
+   <main class="container">
+           <div class="row rm">
+               
+            <header class="col-xs-12">
+               <div class="row">
+                   
+                <section class="col-xs-12 rp">
+                    <img src="assets/img/bandeau.jpg" alt="Bandeau">
+                </section>
+                
+<!--                <nav class="col-xs-12 rp">    -->
+                    <ul class="col-xs-12 rp">
+                        <li class="current"><a href="index.html">Accueil</a></li>
+                        <li><a href="#Presentation">Présentation</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+<!--                </nav>-->
+                
+               </div>
+            </header>
+           </div>
+            
+            <section class="row rm">
+              
+               <h1>Exposition Cy Twombly au Centre Pompidou</h1>
+               
+                <aside class="col-sm-6">
+                    <img class="img-responsive" src="assets/img/cy-twombly-rose.jpg" alt="Cy Twombly">
+                </aside>
+                
+                <article class="col-sm-6">
+                    <p>D’une ampleur inédite, cette première rétrospective complète de l’œuvre de l’artiste américain Cy Twombly est construite <span>autour de trois grands cycles</span> : Nine Discourses on Commodus (1963), Fifty Days at Iliam (1978) et Coronation of Sesostris (2000).</p>
+                    
+                    <p>L’exposition retrace l’ensemble de la carrière de l’artiste à travers un parcours de cent quarante peintures, sculptures, dessins et photographies.</p>
+                   
+                    <p>De ses <span>premiers travaux du début des années 1950</span>span>, marqués notamment par le graffiti et l’écriture, à ses compositions des années 1960, de sa réponse à l’art minimal et conceptuel des années 1970 à ses dernières peintures, cette rétrospective souligne l’importance des cycles et des séries dans lesquels Cy Twombly réinvente la peinture d’Histoire. </p>
+                    
+                    <p>Salué comme l’un des plus <span>importants peintres de la seconde moitié du 20e siècle</span> 
+                    , Twombly « syncrétise » l’héritage de l’expressionisme abstrait américain et les origines de la culture méditerranéenne.</p>
+                </article>  
+                 
+            </section>
+            
+            <footer>
+                <div class="row rm">
+                    
+                    <section class="gmap col-sm-4">
+                        <!--3.Mettre en place une carte google map-->
+                        <div class="google-maps">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d656.2199849088435!2d2.351753796910167!3d48.86049977278909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb7ac6c7e59dc3345!2sLe+Centre+Pompidou!5e0!3m2!1sfr!2sfr!4v1490690265084" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </section>
+
+                    <section class="newsletter col-sm-4">
+
+                        <!--4.Formulaire de newsletter | Nom, Prénom et Email-->
+                        <form name="FormulaireInscriptionNewsletter" action="newsletter.php" method="post">
+                            <fieldset>
+                                <legend>Newsletter</legend>
+                            <label for="Nom"></label>
+                            <input type="text" name="Nom" id="Nom" placeholder="Votre nom...">
+
+                            <label for="Prénom"></label>
+                            <input type="text" name="Prénom" id="Prénom" placeholder="Votre prénom...">
+
+                            <label for="Email"></label>
+                            <input type="email" name="Email" id="Email" placeholder="Votre Email..." required>
+
+                            <input type="submit" value="Valider">
+                            </fieldset>
+                        </form>
+                    </section>
+
+                    <section class="contact col-sm-4">
+                      <div id=Contact></div>
+                       <h3>Contact</h3>
+                        <!--5.Coordonnées de contact-->
+                           <address>
+                                <i class="fa fa-clock-o" aria-hidden="true"></i> Tous les jours de 11h à 21h <br>
+                                <i class="fa fa-home" aria-hidden="true"></i> Place Georges Pompidou, <br>
+                                75004 Paris <br>
+                                <i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+33 (0)1 44 78 12 33">+33 (0)1 44 78 12 33</a> <br>
+                                <i class="fa fa-at" aria-hidden="true"></i> <a href="mailto:contact@centrepompidou.fr">contact@centrepompidou.fr</a>
+                            </address>
+                    </section>  
+                </div>
+            </footer>   
+        </main>
+
+</body>
+</html>

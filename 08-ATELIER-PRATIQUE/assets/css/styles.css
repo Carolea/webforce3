@@ -1,0 +1,86 @@
+/*Pour les écrans larges*/
+/*Déclaration de styles pratique*/
+
+.rm{
+    margin: 0 !important;
+}
+
+.rp{
+    padding: 0 !important;
+}
+.mt-40{
+    margin-top: 40px;
+}
+
+.relative{
+    position: relative;
+}
+
+.p20{
+    padding: 0 20px;
+}
+
+
+.clear{
+    clear: both;
+}
+
+
+/*-----------------*/
+/*-----------------*/
+
+
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+/*NAVBAR*/
+.container{
+    width: 100%;
+}
+
+.apple{
+    background-color: rgb(30, 30, 30);
+    height: 79px;
+    font-family: "Roboto Condensed";
+    color:  #ffffff;
+    font-size: 20px;
+    line-height: 24px; 
+    text-align: center;
+}
+
+.apple ul li a{
+    
+}
+
+.apple2{
+    height: 157px;
+    background-color: rgb(20, 20, 20);
+    font-family: "Roboto Condensed";
+}
+/*----------*/
+
+/*PROJECTEUR*/
+.projecteur p{
+    text-align: center;
+}
+
+
+.projo{
+    background: -webkit-linear-gradient(-90deg, #ffffff 0%, #eeeeee 100%);
+    background: -moz-linear-gradient(-90deg, #ffffff 0%, #eeeeee 100%);
+    background: -o-linear-gradient(-90deg, #ffffff 0%, #eeeeee 100%);
+    background: -ms-linear-gradient(-90deg, #ffffff 0%, #eeeeee 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
+}
+
+
+form{
+    padding-top: 10px;
+}
+
+ 
+
+
+
