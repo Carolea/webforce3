@@ -36,12 +36,10 @@ body{
 }
 
 /*NAVBAR*/
-.container{
-    width: 100%;
-}
 
 .apple{
     background-color: rgb(30, 30, 30);
+    width: auto;
     height: 79px;
     font-family: "Roboto Condensed";
     color:  #ffffff;
@@ -50,20 +48,55 @@ body{
     text-align: center;
 }
 
-.apple ul li a{
-    
-}
-
 .apple2{
+    width: auto;
     height: 157px;
     background-color: rgb(20, 20, 20);
     font-family: "Roboto Condensed";
+    margin: 0 auto;
 }
 /*----------*/
 
 /*PROJECTEUR*/
 .projecteur p{
     text-align: center;
+}
+
+.iphone{
+    font-family: "Roboto Condensed" sans-serif;
+    color:  #ffffff;
+    font-size: 50px;
+    line-height: 60px;  
+}
+
+.n7{
+    font-family: "Roboto Condensed" sans-serif;
+    color:  #ffffff;
+    font-weight: 100;
+    font-size: 60px;
+    line-height: 70px; 
+}
+
+.link{
+    font-family: Arial;
+    color:  #66bbff;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.applestore{
+font-family: Arial;
+color:  #cccccc;
+font-size: 17px;
+font-weight: 400;
+line-height: 20.4px;
+}
+
+.projecteur img{
+    overflow-x: hidden;
+    box-sizing: content-box;
+    padding: 0;
 }
 
 
@@ -75,12 +108,55 @@ body{
     background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
 }
 
+aside{
+    margin: 0 auto;
+}
 
-form{
+article p{
+    text-align: center;
+}
+
+.ip7{
+    font-family: "Roboto Condensed", sans-serif;
+    color:  #303236;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 43.2px;
+}
+
+.echange{
+    font-family: Arial;
+    color:  #555555;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+form {
     padding-top: 10px;
 }
 
- 
+input {
+    font-family: Arial;
+    color:  #000000;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px; 
+    background-color:  #eeeeee;
+}
 
+h5{
+    font-family: "Roboto Condensed", sans-serif;
+    color:  #ffffff;
+    font-size: 50px;
+    line-height: 60px;
+    text-align: center;
+}
+
+.btn{
+    color: white;
+    background-color: dodgerblue;
+    margin: 0 auto;
+}
 
 

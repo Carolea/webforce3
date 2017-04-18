@@ -38,7 +38,7 @@
         
       <!-- Static navbar -->
       <nav class="navbar navbar-inverse">
-        <div class="container apple">
+        <div class="apple">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
@@ -83,15 +83,24 @@
       </nav>
         
         <!--        Projecteur-->
-    <section class="row projecteur">
-        <p>iPhone <br>
-        Numéro 7 <br>
-        <a href="#">En savoir plus >></a> <a href="#">Acheter ></a>
-        Ou rendez-vous dès aujourd'hui dans un Apple Store.
-        </p>
+    <div class="container">
         
-        <img src="assets/img/hero_large.jpg" alt="iPhone 7">
+    <section class="row projecteur">
+        <p><span class="iphone">iPhone</span> <br>
+        <span class="n7">  
+        Numéro 7</span>
+        <br>
+        <span class="link"> 
+        <a href="#">En savoir plus >></a> <a href="#">Acheter ></a>
+        </span>
+        <br>
+        <span class="applestore">
+        Ou rendez-vous dès aujourd'hui dans un Apple Store.
+        </span> 
+        </p>   
     </section>
+    </div>
+        <img class="img-responsive rp" src="assets/img/hero_large.jpg" alt="iPhone 7">
     
     <section class="row projo">
         <aside class="col-sm-6">
@@ -99,16 +108,25 @@
         </aside>
         
         <article class="col-sm-6">
-            <p>Passez à l'iPhone 7. <br>
+            <p><span class="ip7">
+            Passez à l'iPhone 7. <br>
+            </span>
             <br>
-            Échangez votre smartphone contre un iPhone neuf dans un Apple Store et bénéficiez de mensualités réduites. <br>
+            <span class="echange">  
+            Échangez votre smartphone contre un iPhone neuf dans un Apple Store et bénéficiez de mensualités réduites. 
+            </span>
             <br>
+            <br>
+            <span class="link"> 
             <a href="#">Comment ça marche ? ></a>
+            </span>
+            
             </p>
         </article>
     </section>
     
     <form>
+       <h5>Contact</h5>
         <div class="form-group">
             <input type="Nom-Prenom" class="form-control" placeholder="Nom et Prénom" id="Nom-Prenom">
         </div>
