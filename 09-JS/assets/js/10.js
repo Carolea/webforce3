@@ -109,13 +109,6 @@ w('</ol>')
 
 
 
-//function moyenne() {
-//  //renvoie la moyenne des nombres fournis en paramètre
-//  var somme=0.0;
-//  var nombre=arguments.length;
-//  for (var i=0; i<nombre; i++) somme+=arguments[i];
-//  return somme/nombre;
-//}
 
 
 

@@ -33,6 +33,7 @@ var email, mdp;
 // 2 -- Je vérifie si l'email saisi (emailLogin) correspond à celui en base de donnée (email)
     if(emailLogin == email && mdpLogin == mdp) {
         w("Bienvenue" + nom + prenom);
+    if(emailLogin )
 } else {
        alert("Mot de passe ou identifiant incorrect!");
 }

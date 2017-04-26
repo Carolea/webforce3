@@ -94,7 +94,7 @@ if((emailLogin === email) && (mdpLogin === mdp)){...}
 
 if((emailLogin === email) || (mdpLogin === mdp)){...}
 
-// L'opérateur "!" : qui signifie le CONTRAIRE de, ou encore NOt
+// L'opérateur "!" : qui signifie le CONTRAIRE de, ou encore NOT
 
 var isUserApproved = true;
 if (!isUserApproved){ // Si l'utilisateur n'est pas approuvé.
