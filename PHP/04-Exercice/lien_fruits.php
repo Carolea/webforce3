@@ -9,11 +9,15 @@
 */
 echo '<pre>'; var_dump($_GET); echo '<pre>';
 
-if(isset($_GET['article']){
-    echo "<p>Article: " .$_GET['article'] . '</p>';
-}
-   
+include 'fonction.inc.php';
 
+if(isset($_GET['fruit'])) echo calcul($_GET['fruit'], 1000);
+
+/*Quand la condition et le resultat sont simples on peut omettre les {} av/ap echo calcul*/
+
+/*Par convention l'écho devrait se trouver av ou apres le h1 avec un appel de fonction de l'echo calcul*/
+
+/*
 function calcul($fruit, $poids){
     
     switch($fruit){
@@ -30,8 +34,7 @@ function calcul($fruit, $poids){
     
     echo calcul($fruit, 1000);
 }
-
-
+*/
 
 
 
@@ -47,13 +50,21 @@ function calcul($fruit, $poids){
 </head>
 <body>
     <h1>Nos Fruits</h1>
-    <a href="lien_fruits.php?article=cerises">Cerises</a>
+    <a href="lien_fruits.php?fruit=cerises">Cerises</a>
     <br>
-    <a href="lien_fruits.php?article=bananes">Bananes</a>
+    <a href="lien_fruits.php?fruit=bananes">Bananes</a>
     <br>
-    <a href="lien_fruits.php?article=pommes">Pommes</a>
+    <a href="lien_fruits.php?fruit=pommes">Pommes</a>
     <br>
-    <a href="lien_fruits.php?article=peches">Pêches</a>
+    <a href="lien_fruits.php?fruit=peches">Pêches</a>
     
+<!--si la requête du GET se fait sur la même page on peut abréger en "?fruit=cerises"-->
+
+
 </body>
 </html>
+
+
+
+
+

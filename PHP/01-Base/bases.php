@@ -903,10 +903,49 @@ echo $date->format('Y-m-d');
 //L'objet est suivi de ->
 //On peut formateur l'objet $date en appelant sa méthode format() et en lui indiquant les paramètres du format souhaité, ici Y-m-d.
 
-//******************************
+//*****************************************
+echo '<h2> Introduction aux objets <h2>';
+//*****************************************  
 
+//Un objet et un autre type de données. Il permet de regrouper des informations. On peut y déclarer des variables appelées attributs ou propriétés, ainsi que des fonctions appelées méthodes.
 
+//Exemple 1:
+//Nous créeons une classe appelée Etudiant qui nous permet de créer des objets de type Etudiant. Ils auront les attributs et les méthodes de cette classe.
+class Etudiant{ //le moule/plan/modèle
+    public $prenom = 'Julien';
+    public $age    = 25; //$prenom et $age sont des attributs/propriétés/caractéristiques. public permet de préciser qu'ils seront accessibles partout contrairement à private protected.
+    
+    public function pays(){ //pays est une méthode
+        return 'France';
+    }
+    
+}
 
+$objet = new Etudiant(); //Etudiant instancier en un objet. new est un mot clé permettant d'instancier la classe et d'en faire un objet.
+
+echo '<pre>'; print_r($objet); echo '</pre>';
+
+//on voit le type de $objet, la classe dont il est issu et les propriétés qu'il contient.
+
+echo $objet->prenom . '<br>'; //pour accéder à la propriété prenom qui est dans l'objet, je mets une flèche ->
+echo $objet->age . '<br>'; //affiche 25
+
+echo $objet->pays(); //appel d'une méthode toujours avec les parenthèses.
+
+//Exemple 2: un panier d'achat de site e-commerce:
+class Panier {
+    public function ajout_article($article){
+        //ici le code pour ajouter l'article au panier
+        return "L'article $article a bien été ajouté au panier";
+    }
+    
+}
+
+//Création d'un objet panier:
+$panier = new Panier();
+echo $panier->ajout_article('Pull'); //appelle la méthode ajout_article en lui passant l'argument 'Pull' pour l'ajouter au panier. Les méthodes s'appellent après une -> et avec des ().
+
+    
 
 
 
