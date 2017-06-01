@@ -888,7 +888,7 @@ echo $dateFormat . '<br>';
 //ces 2 fonctions ne seront plus utilisables en 2038 il faut donc passer par la version objet.
 
 //-------
-//Créer une date avec la classe DateTime (approche object):
+//Créer une date avec la classe DateTime (approche objet):
 
 //$date = new DateTime(date('d-m-Y')); pour la date du jour
 

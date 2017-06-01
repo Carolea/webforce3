@@ -386,7 +386,7 @@ echo implode($donnees, '-');
 
 
 //------------------------------------------------------
-echo '<h3>10. prepare, bindValue, execute </h3>';
+echo '<h3>10. Exercice </h3>';
 //------------------------------------------------------
 
 //Affichez dans une liste <ul><li> le titre des livres empruntés par Chloé en utilisant une requête préparée.
