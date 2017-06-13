@@ -47,7 +47,7 @@ if(isset($_GET['id_produit'])){
     $contenu .= '<div class="col-md-4">';
         if($produit['stock'] > 0){
             //on crée le formulaire:
-            $contenu .= '<form method="post action="panier.php">';
+            $contenu .= '<form method="post" action="panier.php">';
                 $contenu .='<input type="hidden" name="id_produit" value="'. $produit['id_produit'] .'">';
             
             $contenu .= '<select name="quantite" class="form-group-sm form-control-static">';
@@ -85,7 +85,27 @@ if(isset($_GET['id_produit'])){
 Note: utilisez la variable $aside pour afficher le contenu.
 */
 
+//Affichage de la confirmation de l'ajout d'un article au panier:
 
+if(isset($_GET['statut_produit']) && $_GET['statut_produit'] == 'ajoute'){
+    //on construit le popup HTML:
+    $contenu_gauche = '<div class="modal fade" id="myModal" role="dialog">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">Le produit a été ajouté au panier!</h4>
+                                    </div>
+                                    
+                                    <div class="modal-body">
+                                        <p><a href="panier.php">Voir le panier</a></p>
+                                        <p><a href="boutique.php">Continuer ses achats</a></p>
+                                    </div>
+                                </div>
+                            </div>
+    
+    
+                        </div>';
+}
 
 
 
@@ -106,6 +126,13 @@ echo $contenu_gauche;
         </div>
         <?php echo $aside; ?>
     </div>
+    
+    <script>
+        $(function(){
+            $("#myModal").modal("show"); //appelle la boite modale bootstrap
+        });
+
+    </script>
     
 
 <?php

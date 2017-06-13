@@ -60,7 +60,7 @@
                         echo '<li><a href="'. RACINE_SITE . 'connexion.php">Connexion</a></li>'; 
                     }
                     
-                    echo '<li><a href="'. RACINE_SITE . 'panier.php">Panier</a></li>';
+                    echo '<li><a href="'. RACINE_SITE . 'panier.php">Panier ('. quantiteProduit() .')</a></li>';
                     
                     if(internauteEstConnecteEtEstAdmin()){
                         //pour l'admin, on affiche les liens vers le back-office:

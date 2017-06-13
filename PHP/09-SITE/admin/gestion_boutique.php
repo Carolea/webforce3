@@ -36,7 +36,6 @@ if(isset($_GET['action']) && $_GET['action'] == 'suppression' && isset($_GET['id
     $_GET['action'] = 'affichage'; //pour reafficher le tableau html sans le produit supprimé
     
 }   
-        
 
 
 //4- Enregistrement du produit en BDD:

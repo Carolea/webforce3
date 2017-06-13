@@ -163,7 +163,7 @@ echo '<pre>'; print_r($employe); echo '</pre>';
 echo $employe['prenom'] . '<br>';
 echo $employe[1] . '<br>';
 
-//le fetch sans argument donne un mélange de FETCH_NUM et FETCH_ACCOC
+//le fetch sans argument donne un mélange de FETCH_NUM et FETCH_ASSOC
 
 //---
 $result = $pdo->query("SELECT * FROM employes WHERE prenom ='thomas'");

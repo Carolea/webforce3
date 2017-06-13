@@ -13,7 +13,7 @@ Le fichier init.inc.php sera inclus dans tous les scripts (hors les fichiers .in
 $pdo = new PDO('mysql:host=localhost;dbname=site', 'root', '', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_WARNING, PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 
 // Session:
-session_start(); //crée ou ouvre une sesison sur le serveur
+session_start(); //crée ou ouvre une session sur le serveur
 
 // Définition du chemin du site
 define('RACINE_SITE', '/webforce3/PHP/09-SITE/'); //indique le dossier dans lequel se trouve les sources du site sns 'localhost'. La constante s'écrit en majuscule.
