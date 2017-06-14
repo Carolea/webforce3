@@ -26,7 +26,7 @@ while($contact = $query->fetch(PDO::FETCH_ASSOC)){
     $contenu .= '<td>' . $contact['nom'] . '</td>';
     $contenu .= '<td>' . $contact['prenom'] . '</td>';
     $contenu .= '<td>' . $contact['telephone'] . '</td>';
-    $contenu .= '<td><a href="?'id_contact='. $contact['id_contact'] .'">Autres Infos</a></td>';
+    $contenu .= '<td><a href="?id_contact='. $contact['id_contact'] .'">Autres Infos</a></td>';
  
     $contenu .= '</tr>';
 }

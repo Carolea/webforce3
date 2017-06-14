@@ -901,7 +901,7 @@ $date = new DateTime('11-04-2017');
 echo $date->format('Y-m-d');
     
 //L'objet est suivi de ->
-//On peut formateur l'objet $date en appelant sa méthode format() et en lui indiquant les paramètres du format souhaité, ici Y-m-d.
+//On peut formater l'objet $date en appelant sa méthode format() et en lui indiquant les paramètres du format souhaité, ici Y-m-d.
 
 //*****************************************
 echo '<h2> Introduction aux objets <h2>';
